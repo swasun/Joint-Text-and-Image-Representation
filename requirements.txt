@@ -1,0 +1,8 @@
+tensorflow-gpu
+keras
+numpy
+sklearn
+matplotlib
+mpl_toolkits
+lapjv
+scipy
