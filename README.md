@@ -8,14 +8,14 @@ A good introduction of Representation Learning would be [Bengio, Y. et al., 2013
 
 # Features
 
-* Image retreival
-* Caption retreival
-* VSE++ losses (Loss-Sum-Hinge and Loss-Max-Hinge)
-* t-SNE for captions in a 2D scatter
-* t-SNE for captions in 3D scatter
-* t-SNE for images in a 2D grid
-* t-SNE for images in a 2D scatter
-* t-SNE for both captions and images in a 2D scatter
+* [Image retreival](src/retreival/image_retreival.py)
+* [Caption retreival](src/retreival/caption_retreival.py)
+* [VSE++ losses](src/model/custom_loss.py) (Loss-Sum-Hinge and Loss-Max-Hinge)
+* [t-SNE for captions in a 2D scatter](src/tsne/tsne_caption_2d_scatter.py)
+* [t-SNE for captions in 3D scatter](src/tsne/tsne_caption_3d_scatter.py)
+* [t-SNE for images in a 2D grid](src/tsne/tsne_image_2d_grid.py)
+* [t-SNE for images in a 2D scatter](src/tsne/tsne_image_2d_scatter.py)
+* [t-SNE for both captions and images in a 2D scatter](src/tsne/tsne_image_caption_2d_scatter.py)
 
 # Installation
 

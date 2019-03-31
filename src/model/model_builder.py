@@ -97,17 +97,18 @@ class ModelBuilder(object):
         caption_pipeline = caption_rnn(caption_embedding(caption_input))
 
         output = CosSimLayer()([image_pipeline, caption_pipeline])
-        #output = dot([image_pipeline, caption_pipeline], normalize=True, axes=0
 
+        """
+        A model for training which outputs the concatenation
+        of the result of the positive and negative pairs.
+        """
         training_model = Model(input=[image_input, caption_input], output=output)
-        # a model for training which outputs the concatenation
-        # of the result of the positive and negative pairs
 
+        # A model which compute a novel image representation
         image_model = Model(input=image_input, output=image_pipeline)
-        # a model which compute a novel image representation
 
+        # A model which compute a caption representation
         caption_model = Model(input=caption_input, output=caption_pipeline)
-        # a model which compute a caption representation
 
         if loss is 'sh':
             fct_loss = sh_loss
